@@ -46,15 +46,20 @@ public class Clientes {
         return clientes;
 
     }
-    public static void imprimir(Clientes[] clientes) {
+
+    public static void imprimirD(Clientes[] clientes) {
         if (clientes != null) {
-            for (Clientes cliente : clientes) {
-                if (cliente != null) {
-                    System.out.println("Nombre: " + cliente.getNombre());
-                    System.out.println("Clave: " + cliente.getClave());
-                    System.out.println("--------------");
-                } else {
-                    System.out.println("El cliente no existe.");
+            if (clientes.length == 0) {
+                System.out.println("La lista de clientes está vacía.");
+            } else {
+                for (Clientes cliente : clientes) {
+                    if (cliente != null) {
+                        System.out.println("Nombre: " + cliente.getNombre());
+                        System.out.println("Clave: " + cliente.getClave());
+                        System.out.println("--------------");
+                    } else {
+                        System.out.println("El cliente no existe.");
+                    }
                 }
             }
         } else {
