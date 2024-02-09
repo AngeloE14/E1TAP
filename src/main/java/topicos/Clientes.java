@@ -44,5 +44,22 @@ public class Clientes {
             teclado.nextLine();
         }
         return clientes;
+
     }
+    public static void imprimir(Clientes[] clientes) {
+        if (clientes != null) {
+            for (Clientes cliente : clientes) {
+                if (cliente != null) {
+                    System.out.println("Nombre: " + cliente.getNombre());
+                    System.out.println("Clave: " + cliente.getClave());
+                    System.out.println("--------------");
+                } else {
+                    System.out.println("El cliente no existe.");
+                }
+            }
+        } else {
+            System.out.println("No hay clientes para imprimir.");
+        }
+    }
+
 }
