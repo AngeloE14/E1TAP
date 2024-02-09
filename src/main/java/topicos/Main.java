@@ -18,12 +18,12 @@ public class Main {
             opc = teclado.nextInt();
 
             switch (opc) {
-                case 1: Clientes.datos(); break;
+                case 1:  clientes = Clientes.datos(); break;
                 case 2: Producto.datos(); break;
                 case 3:  break;
                 case 4:  break;
                 case 5:  break;
-                case 6: Clientes.imprimir(clientes);  break;
+                case 6: Clientes.imprimirD(clientes);  break;
                 case 0: System.out.println("Saliendo del programa. ¡Adios!"); break;
                 default: System.out.println("Upps! Intente nuevamente."); break;
             }
