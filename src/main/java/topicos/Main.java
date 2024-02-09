@@ -1,10 +1,10 @@
 package topicos;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int opc;
+        Clientes[] clientes = null;
         do {
             System.out.println("****** Menu Catalogo ******");
             System.out.println("1. Clientes");
@@ -23,7 +23,7 @@ public class Main {
                 case 3:  break;
                 case 4:  break;
                 case 5:  break;
-                case 6:  break;
+                case 6: Clientes.imprimir(clientes);  break;
                 case 0: System.out.println("Saliendo del programa. ¡Adios!"); break;
                 default: System.out.println("Upps! Intente nuevamente."); break;
             }
